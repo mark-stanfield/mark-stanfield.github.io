@@ -1,0 +1,44 @@
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <!-- TODO: Add link to Metropolis/Montserrat fonts -->
+    <style>
+        /* Basic Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Metropolis', 'Montserrat', Arial, sans-serif; line-height: 1.6; color: #333; background-color: #ffffff; } /* Use ALPFA Grey for background if needed */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Metropolis', 'Montserrat', Arial, sans-serif; font-weight: bold; color: #1D4F91; /* ALPFA Blue */ margin-bottom: 1rem; } /* Adjust colors and weights based on style guide */
+        p { margin-bottom: 1rem; }
+        a { color: #A6192E; /* ALPFA Scarlet */ text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .btn { display: inline-block; padding: 10px 20px; background-color: #A6192E; /* ALPFA Scarlet */ color: white; text-decoration: none; border-radius: 5px; margin: 5px 0; }
+        .btn:hover { background-color: #851425; /* Darker shade */ }
+        .btn-outline { background-color: transparent; border: 2px solid #A6192E; color: #A6192E; }
+        .btn-outline:hover { background-color: #A6192E; color: white; }
+        header, footer { background-color: #002855; /* ALPFA Navy */ color: white; padding: 1rem 0; }
+        nav ul { list-style: none; display: flex; justify-content: center; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { color: white; text-decoration: none; }
+        nav ul li a:hover { text-decoration: underline; }
+        main { padding: 2rem 0; }
+        footer p { text-align: center; }
+        /* Add more specific styles based on ALPFA guidelines */
+    </style>
+</head>
+<body>
+    {% include header.html %}
+
+    <main>
+        <div class="container">
+            {{ content }}
+        </div>
+    </main>
+
+    {% include footer.html %}
+</body>
+</html>
