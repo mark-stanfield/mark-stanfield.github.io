@@ -7,9 +7,12 @@ on:
   pull_request:
     branches: [ main ] # Optionally, trigger on pull requests
 
+# Add this permissions block at the top level of the job
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest # Use the latest Ubuntu environment
+    permissions:
+      contents: write  # This gives the action write access to repository contents (like pushing to gh-pages)
 
     steps:
     - name: Checkout 🛎️
@@ -35,3 +38,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }} # Token provided by GitHub Actions
         publish_dir: ./_site # Directory where the built site is located
         # publish_branch: gh-pages # Optional: specify the branch to deploy to (default is gh-pages)
+        # enable_jekyll: false # Optional: Since we are building Jekyll, set this to false (default) so the action doesn't try to build it again on GH Pages. If your _site contains a built site, this is correct.
