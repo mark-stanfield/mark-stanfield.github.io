@@ -1,0 +1,45 @@
+/* assets/css/style.css */
+
+/* This file needs to be completed based on the ALPFA Brand Guidelines */
+/* Colors: Use ALPFA Blue (#1D4F91), ALPFA Scarlet (#A6192E), ALPFA Teal (#008C95), ALPFA Red (#D22630), ALPFA Navy (#002855), ALPFA Grey (#A2AAAD) */
+/* Typography: Use Metropolis and Montserrat, apply styles like Title 1, Title 2, Headline, Subtitle, Copy, Caption sizes and weights as defined in the guide */
+
+body {
+  /* Example base styles already in default layout */
+  /* font-family: 'Metropolis', 'Montserrat', Arial, sans-serif; */
+  /* color: ...; */
+  /* background-color: ...; */
+}
+
+h1 {
+  /* Apply Title 1 style from guide */
+  /* font-family: Metropolis; */
+  /* font-weight: Bold; */
+  /* font-size: 29pt; */
+  /* line-height: 34pt; */
+  /* color: #1D4F91; */
+}
+
+h2 {
+  /* Apply Title 2 style from guide */
+  /* font-family: Metropolis; */
+  /* font-weight: Bold; */
+  /* font-size: 21pt; */
+  /* line-height: 25pt; */
+  /* color: #1D4F91; */
+}
+
+/* Add styles for other headings, paragraphs, links, buttons, containers, etc. */
+/* Ensure responsive design */
+
+/* Example button styles already in default layout */
+/* .btn { ... } */
+/* .btn-outline { ... } */
+
+
+/* Add specific styles for navigation, header, footer, main content areas */
+/* Style the resume submission form */
+/* Style the newsletter list and individual post pages */
+
+
+/* --- Add your detailed CSS rules here based on the ALPFA guide --- */
