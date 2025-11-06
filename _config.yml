@@ -10,7 +10,7 @@ github_username:  yourusername # Replace with your GitHub username
 
 # Build settings
 markdown: kramdown
-theme: minima # You can remove this if using a custom setup
+# theme: minima # You can remove this if using a custom setup
 plugins:
   - jekyll-feed
 
